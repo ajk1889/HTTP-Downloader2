@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/ico"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@id/add_1"
+        android:text="HTTP DOWNLOADER"
+        android:textColor="@color/colorAccent_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/downloads_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_1"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentBottom="true"
+        android:divider="@null" />
+
+    <TextView
+        android:id="@+id/blankInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/ico"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome_msg"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/add_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/start_new_download"
+        android:onClick="showDownloadOptions"
+        android:padding="10dp"
+        android:src="@drawable/add"
+        app:tint="@color/colorPrimary_light" />
+
+    <LinearLayout
+        android:id="@+id/wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp">
+
+        <ProgressBar
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading tasks..." />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmentHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

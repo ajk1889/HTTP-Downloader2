@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activities.Browser">
+
+    <LinearLayout
+        android:id="@+id/addressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round"
+            android:hint="@string/url_or_search"
+            android:onClick="showSearchBar"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="3dp"
+            android:id="@+id/tabsIcon"
+            android:onClick="showTabs">
+
+            <ImageView
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:contentDescription="@string/change_tab"
+                android:src="@drawable/square" />
+
+            <TextView
+                android:id="@+id/tabsCount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/one"
+                android:textColor="#000"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/options"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="showOptions"
+            android:contentDescription="@string/options"
+            android:padding="10dp"
+            android:src="@drawable/menu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tabsParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addressBar"
+        android:layout_margin="5dp">
+
+        <FrameLayout
+            android:id="@+id/webTabView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+</RelativeLayout>

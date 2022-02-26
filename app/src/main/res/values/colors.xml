@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Light theme-->
+    <color name="colorPrimary_light">#1B2664</color>
+    <color name="colorPrimaryDark_light">#ffffff</color>
+    <color name="status_bar_color">#fff</color>
+    <color name="status_bar_color21">#ccc</color>
+    <color name="colorAccent_light">#156AE4</color>
+    
+    <!--Dark theme-->
+    <color name="colorPrimary_dark">#4787FF</color>
+    <color name="colorPrimaryDark_dark">#000000</color>
+    <color name="colorAccent_dark">#156AE4</color>
+</resources>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">HTTP Downloader</string>
+    <string name="start_new_download">Start new download</string>
+    <string name="change_folder">Change\nFolder</string>
+    <string name="storage_permission_text">Grant HTTP Downloader storage access permission</string>
+    <string name="storage_location_text">
+        <b>Please select a default download location.</b>\n
+        All your files will be downloaded to this location, unless you choose another folder for each downloads\n\n
+        You can change this at any time from settings.
+    </string>
+    <string name="http_headers"><b><i><u>HTTP headers</u></i></b></string>
+    <string name="create_a_blank_file_first">Create a blank file first\n<b>(recommended)</b></string>
+    <string name="download_folder_name">HTTP-Downloads/</string>
+    <string name="files_to_be_joined"><b><u>Files to be joined</u></b></string>
+    <string name="expand_or_collapse">expand or collapse</string>
+    <string name="options"><b><u>Options</u></b></string>
+    <string name="status"><b><u>Status</u></b></string>
+    <string name="cancel_joining">Cancel joining</string>
+    <string name="output_file_name">Output file name: <font color='red'>No file selected</font></string>
+    <string name="file_size_after_joining_initial">File size after joining: <b>---</b></string>
+    <string name="space_required_for_joining_initial">Extra space required for joining: <b>---</b></string>
+    <string name="overall">Overall:</string>
+    <string name="welcome_msg">Click on <b>+</b> icon at top right\nto start a new download</string>
+
+    <string name="file_conflict_warning">A file with the same name already exists in the selected folder. If you continue with this name, the download will be requested from its end and it will be appended</string>
+    <string name="review_string">If you like this app, please spend 5 seconds to rate it. It would make a difference.\n\n Feel free to contact us for help, support, feedback and suggestions.</string>
+    <string name="one">1</string>
+    <string name="change_tab">Change browser tab</string>
+    <string name="url_or_search">URL or search</string>
+    <string name="qr_code_description">When prompted for shared download data click on <b><i>Scan QR</i></b> and scan this</string>
+    <string name="share_title">Be careful</string>
+    <string name="share_warning"><b>Download data may contain your login session/tokens.</b>\nWith this data, an attacker can access your account in some websites.\n\n<b>Share this only to people whom you trust.</b></string>
+    <string name="streaming_server_mode">Streaming server mode</string>
+    <string name="limit_download_speed">Limit download speed</string>
+    <string name="share_download_data">Share download data</string>
+    <string name="copy_download_url">Copy download URL</string>
+    <string name="refresh_download_link">Refresh download link</string>
+    <string name="go_to_first_options">Go to first options</string>
+    <string name="forward">Forward</string>
+    <string name="exit">Exit</string>
+    <string name="sample_user_agent">Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.60 Mobile Safari/537.36</string>
+    <string name="file_name">File name</string>
+    <string name="browser_environment">Browser environment</string>
+    <string name="schedule_download">Schedule this download</string>
+    <string name="time_separator">:</string>
+    <string name="backup_and_restore">Backup/restore app data</string>
+    <string name="miscellaneous_settings">Miscellaneous settings</string>
+    <string name="auto_sort">Auto-sort selected file parts in file joiner</string>
+    <string name="usage_data">Send anonymous usage data</string>
+    <string name="reset_to_default">Reset settings to default</string>
+    <string name="know_more">Know more (features, updates, tips and tricks)</string>
+    <string name="help_and_support">Help and support</string>
+    <string name="report_bug">Report a bug / Suggest a feature</string>
+    <string name="app_id">App\'s unique ID (long press to copy)</string>
+    <string name="loading">Loading…</string>
+    <string name="settings">Settings</string>
+    <string name="download_settings">Download Settings</string>
+    <string name="internal_storage_http_downloads"><![CDATA[Internal storage -> HTTP-Downloads]]></string>
+    <string name="max_parallel_downloads">Maximum parallel downloads:</string>
+    <string name="_2">2</string>
+    <string name="refresh_interval">Download refresh interval:</string>
+    <string name="refresh_interval_descr">what is refresh interval?</string>
+    <string name="append_when_conflict">Append when file name conflicts</string>
+    <string name="auto_retry">Auto-retry downloads on reconnect</string>
+    <string name="disable_sound">Disable notification sound</string>
+    <string name="clear_downloads_list">Clear downloads list</string>
+    <string name="browser_settings">In-built Browser Settings</string>
+    <string name="browser_home_page">Browser\nhome page</string>
+    <string name="google_home_page">https://www.google.com/</string>
+    <string name="history_storage_limit">History storage limit:</string>
+    <string name="_500">500</string>
+    <string name="items">items</string>
+    <string name="block_popups">Block popups in browser</string>
+    <string name="prefer_desktop_mode">Prefer desktop mode in browser</string>
+    <string name="always_ask_for_download_folder">Always ask for download folder</string>
+    <string name="clear_browsing_data">Clear browsing data</string>
+    <string name="choose_default_folder">Choose default folder for downloads</string>
+    <string name="default_download_folder">Default download folder</string>
+    <string name="show_remaining_time">Show remaining time in notification</string>
+    <string name="ignore_ssl_errors">Ignore SSL errors</string>
+</resources>
