@@ -55,7 +55,8 @@
             android:name=".activities.SimpleActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="HTTP-Downloader"
-            android:windowSoftInputMode="stateHidden">
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
 
@@ -80,7 +81,8 @@
         <activity
             android:name=".activities.MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:launchMode="singleInstance">
+            android:launchMode="singleInstance"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -93,7 +95,8 @@
             android:enabled="false"
             android:icon="@drawable/advanced_blue"
             android:label="TestSuit"
-            android:taskAffinity="resonance.http.httpdownloader.test">
+            android:taskAffinity="resonance.http.httpdownloader.test"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
